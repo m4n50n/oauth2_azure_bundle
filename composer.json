@@ -1,0 +1,48 @@
+{
+    "name": "m4n50n/oauth2-azure-bundle",
+    "description": "This bundle provides a tiny wrapper for using thenetworg/oauth2-azure inside Symfony.",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": [
+        "azure",
+        "oauth2",
+        "api",
+        "wrapper",
+        "bundle",
+        "microsoft",
+        "login"
+    ],
+    "authors": [
+        {
+            "name": "Jose Clemente García Rodríguez",
+            "email": "josegarciarodriguez89@hotmail.com"
+        }
+    ],
+    "homepage": "https://github.com/m4n50n/oauth2_azure_bundle",
+    "support": {
+        "issues": "https://github.com/m4n50n/oauth2_azure_bundle/issues",
+        "source": "https://github.com/m4n50n/oauth2_azure_bundle"
+    },
+    "require": {
+        "php": "^8.1",
+        "thenetworg/oauth2-azure": "^2.2.2",
+        "symfony/config": "^6.4 || ^7.0",
+        "symfony/dependency-injection": "^6.4 || ^7.0",
+        "symfony/http-foundation": "^6.4 || ^7.0",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/serializer": "^6.4 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "M4n50n\\OAuth2AzureBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M4n50n\\OAuth2AzureBundle\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
