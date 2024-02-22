@@ -57,6 +57,18 @@ AUTH_REDIRECT_TO_URL=true
 AUTH_REDIRECT_URL="https://endpoint-client.com"
 ```
 
+If you want the configuration / environment files to be created automatically inside your `/config` folder, you can include my private *Symfony Flex* recipes repository in your `composer.json` by adding the following configuration:
+```json
+"extra": {
+  "symfony": {
+      "endpoint": [
+          "https://api.github.com/repos/m4n50n/symfony_flex_recipes/contents/index.json",
+          "flex://defaults"
+      ]
+  }
+}
+```
+
 ## Usage
 
 Inject ***OAuth2AzureFactory*** into your Service or Controller, and call the *getAuth()* method with *Request* as an argument.
